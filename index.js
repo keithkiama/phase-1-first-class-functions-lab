@@ -30,7 +30,11 @@ function fareTripler(fare) {
   return fareTimesThree(fare);
 }
 
-function selectDifferentDrivers(arrayOfDrivers, fn) {
-  return fn(arrayOfDrivers);
+function selectDifferentDrivers(selectingDriversArray,returnFirstTwoDrivers) {
+  return returnFirstTwoDrivers(selectingDriversArray);
 }
 
+
+function selectDifferentDrivers(selectingDriversArray,returnLastTwoDrivers) {
+  return returnLastTwoDrivers(selectingDriversArray);
+}
